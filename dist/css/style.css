@@ -192,7 +192,7 @@ i[id] {
 }
 .pickup__button {
   display: block;
-  width: 22.5rem;
+  width: 42rem;
   margin-top: 2.5rem;
 }
 .pickup__button-image {
@@ -228,8 +228,59 @@ i[id] {
     width: 30rem;
   }
   .pickup__button {
-    width: 18.3rem;
-    margin-top: 1.5rem;
+    width: 28rem;
+    margin-top: 1.6rem;
+  }
+}
+
+.mora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mora__subttl {
+  width: 52rem;
+  height: auto;
+}
+.mora__ttl {
+  width: 46rem;
+  height: auto;
+  margin-top: 1.6rem;
+}
+.mora__image {
+  width: 62rem;
+  height: auto;
+  margin-top: 2.4rem;
+}
+.mora__button {
+  display: block;
+  margin-top: 2.4rem;
+}
+.mora__button img {
+  width: 100%;
+  height: auto;
+}
+.sec02 .box01 {
+  margin-top: 8rem;
+}
+@media screen and (min-width: 768px) {
+  .mora__subttl {
+    width: 38rem;
+  }
+  .mora__ttl {
+    width: 34rem;
+    margin-top: 1.2rem;
+  }
+  .mora__image {
+    width: 56rem;
+    margin-top: 2rem;
+  }
+  .mora__button {
+    margin-top: 2rem;
+  }
+  .sec02 .box01 {
+    margin-top: 6rem;
   }
 }
 
@@ -273,6 +324,7 @@ i[id] {
   .sec02 .box02 {
     display: grid;
     grid-template-columns: repeat(2, 33rem);
+    justify-content: center;
     gap: 5rem;
   }
   .sec02 .box02 .box02_box {
@@ -289,7 +341,6 @@ i[id] {
 }
 
 .sec03 {
-  border-bottom: 3px solid;
   background: #fff;
 }
 
@@ -340,7 +391,7 @@ ul.list02 {
 }
 
 .sec04 {
-  background: url(../img/bg05.webp) bottom center / cover no-repeat;
+  background: #fff;
 }
 
 .sec04 .box01 {
@@ -364,6 +415,177 @@ ul.list02 {
   /* SP用 */
   .sec04 .box02 {
     padding: 2em 1.5em;
+  }
+}
+
+.sec05 {
+  background-color: #dceff1;
+  background-image:
+    url("../img/2611/kumo_sp.webp"),
+    url("../img/2611/enquete_bg.webp");
+  background-repeat: no-repeat, repeat;
+  background-position: top center, center top;
+  background-size: 100% auto, 160rem auto;
+  padding: calc(100vw * 259 / 1501 + 4rem) 0 8rem;
+}
+.enquete__hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.4rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -3.2rem;
+  padding: 0 1rem;
+}
+.enquete__hero h2 {
+  width: auto;
+  line-height: 0;
+}
+.enquete__pokke {
+  width: 16rem;
+  height: auto;
+  flex: none;
+}
+.enquete__ttl {
+  width: 48rem;
+  height: auto;
+}
+.enquete__card {
+  background: #fff;
+  border: 2px solid #231815;
+  padding: 6rem 2.4rem 2.4rem;
+}
+.enquete__card + .enquete__card {
+  margin-top: 5rem;
+}
+.enquete__q {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+.enquete__q img {
+  width: 6.4rem;
+  height: auto;
+  flex: none;
+}
+.enquete__q p {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.65;
+}
+.enquete__cloud {
+  display: block;
+  width: 92%;
+  height: auto;
+  margin: 2rem auto 0;
+}
+.enquete__best {
+  background: #fff8e8;
+  margin-top: 2rem;
+  padding: 2.4rem 1.6rem 2rem;
+  text-align: center;
+}
+.enquete__best-ttl {
+  width: 52rem;
+  height: auto;
+}
+.enquete__best-img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.6rem;
+}
+.enquete__ranking {
+  width: 100%;
+  height: auto;
+  margin-top: 1.6rem;
+}
+.enquete__card picture {
+  display: block;
+}
+.enquete__chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+.enquete__note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  background: #fff8e8;
+  margin-top: 2rem;
+  padding: 1.8rem 1.6rem;
+}
+.enquete__note p {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+.enquete__note img {
+  width: 14rem;
+  height: auto;
+  flex: none;
+}
+@media screen and (min-width: 768px) {
+  .sec05 {
+    background-image:
+      url("../img/2611/kumo_pc.webp"),
+      url("../img/2611/enquete_bg.webp");
+    background-size: 100% auto, 1920px auto;
+    padding: calc(100vw * 603 / 3841 + 2rem) 0 8rem;
+  }
+  .enquete__hero {
+    margin-bottom: -2.7rem;
+  }
+  .enquete__pokke {
+    width: 15rem;
+  }
+  .enquete__ttl {
+    width: 42rem;
+  }
+  .enquete__card {
+    padding: 6.4rem 4rem 3.2rem;
+  }
+  .enquete__card + .enquete__card {
+    margin-top: 4rem;
+  }
+  .enquete__q img {
+    width: 4.4rem;
+  }
+  .enquete__q p {
+    font-size: 1.6rem;
+  }
+  .enquete__cloud {
+    width: 78%;
+    margin-top: 1.2rem;
+  }
+  .enquete__best {
+    margin-top: 1.6rem;
+    padding: 2.8rem 3rem 2.4rem;
+  }
+  .enquete__best-ttl {
+    width: 42rem;
+  }
+  .enquete__best-img {
+    width: 52rem;
+  }
+  .enquete__ranking {
+    width: 56rem;
+  }
+  .enquete__chart {
+    margin-top: 2.4rem;
+  }
+  .enquete__note {
+    margin-top: 2.4rem;
+    padding: 1.6rem 3rem;
+  }
+  .enquete__note p {
+    font-size: 1.5rem;
+  }
+  .enquete__note img {
+    width: 9rem;
   }
 }
 
