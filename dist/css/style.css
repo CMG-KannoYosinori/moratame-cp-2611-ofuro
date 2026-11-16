@@ -135,14 +135,14 @@ body {
     /* PC用 */
     background:
       url(../img/bg04.webp) bottom center / 100% auto no-repeat,
-      repeating-linear-gradient(90deg, #e9f2ed 0 4.5rem, #fff 4.5rem 9rem);
+      repeating-linear-gradient(90deg, #daeed7 0 4.5rem, #fff 4.5rem 9rem);
   }
 
   @media (width <= 768px) {
     /* SP用 */
     background:
       url(../img/bg04_sp.webp) bottom center / 100% auto no-repeat,
-      repeating-linear-gradient(90deg, #e9f2ed 0 3rem, #fff 3rem 6rem);
+      repeating-linear-gradient(90deg, #daeed7 0 3rem, #fff 3rem 6rem);
   }
 }
 
